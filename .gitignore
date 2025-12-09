@@ -28,7 +28,7 @@ dist/
 Thumbs.db       # Windows
 
 # pastas e docs
-documents/
+documentos/
 _extensions/
-quato/
+quarto/
 info_git.txt
