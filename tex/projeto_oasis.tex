@@ -1,0 +1,453 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  oneside,
+  open=any]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{hyphenat}
+\usepackage{ifthen}
+\usepackage{calc}
+\usepackage{calculator}
+
+
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{fadings}
+\usepackage[pagecolor=none]{pagecolor}
+
+
+% Set the titlepage font families
+
+
+
+
+
+
+
+% Set the coverpage font families
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Projeto},
+  pdfauthor={Evandro Farias RochaAdjunto},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Projeto}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Oásis de Cabaceiras}
+\author{Evandro Farias Rocha\nCoordenador Adjunto}
+\date{}
+\begin{document}
+%%%%% begin titlepage extension code
+
+
+\begin{titlepage}
+
+%%% TITLE PAGE START
+
+% Set up alignment commands
+%Page
+\newcommand{\titlepagepagealign}{
+\ifthenelse{\equal{center}{right}}{\raggedleft}{}
+\ifthenelse{\equal{center}{center}}{\centering}{}
+\ifthenelse{\equal{center}{left}}{\raggedright}{}
+}
+
+
+\newcommand{\titleandsubtitle}{
+% Title and subtitle
+{{\huge{\bfseries{\nohyphens{Projeto}}}}\par
+}%
+
+\vspace{\betweentitlesubtitle}
+{
+{\Large{\nohyphens{Oásis de Cabaceiras}}}\par
+}}
+\newcommand{\titlepagetitleblock}{
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+
+\HRule\\[0.4cm]
+
+\titleandsubtitle
+
+\HRule\\
+}
+\newcommand{\authorstyle}[1]{{\textsc{#1}}}
+
+\newcommand{\affiliationstyle}[1]{{\large{#1}}}
+
+\newcommand{\titlepageauthorblock}{
+{\authorstyle{\nohyphens{Evandro Farias Rocha\nCoordenador Adjunto}\\}}
+}
+
+\newcommand{\titlepageaffiliationblock}{}
+\newcommand{\headerstyled}{%
+{\textsc{\LARGE{}}}
+}
+\newcommand{\footerstyled}{%
+{}
+}
+\newcommand{\datestyled}{%
+{\large{}}
+}
+
+
+\newcommand{\titlepageheaderblock}{\headerstyled}
+
+\newcommand{\titlepagefooterblock}{
+\footerstyled
+}
+
+\newcommand{\titlepagedateblock}{
+\datestyled
+}
+
+%set up blocks so user can specify order
+\newcommand{\titleblock}{\newlength{\betweentitlesubtitle}
+\setlength{\betweentitlesubtitle}{\baselineskip}
+{
+
+{\titlepagetitleblock}
+}
+
+\vspace{1.5cm}
+}
+
+\newcommand{\authorblock}{{\titlepageauthorblock}
+
+\vspace{0pt}
+}
+
+\newcommand{\affiliationblock}{{\titlepageaffiliationblock}
+
+\vspace{0pt}
+}
+
+\newcommand{\logoblock}{{\includegraphics[width=0.2\paperwidth]{quarto/img/img\_fcf\_v3.png}}
+
+\vspace{10\baselineskip}
+}
+
+\newcommand{\footerblock}{}
+
+\newcommand{\dateblock}{}
+
+\newcommand{\headerblock}{}
+
+\thispagestyle{empty} % no page numbers on titlepages
+
+
+\newlength{\minipagewidth}
+\setlength{\minipagewidth}{\textwidth}
+\raggedright % single minipage
+% [position of box][box height][inner position]{width}
+% [s] means stretch out vertically; assuming there is a vfill
+\begin{minipage}[b][\textheight][s]{\minipagewidth}
+\titlepagepagealign
+\headerblock
+
+\logoblock
+
+\titleblock
+
+\authorblock
+
+\vfill
+
+\dateblock
+\par
+
+\end{minipage}\ifthenelse{\equal{}{right} \OR \equal{}{leftright} }{
+\hspace{\B}
+\vrulecode}{}
+\clearpage
+%%% TITLE PAGE END
+\end{titlepage}
+\setcounter{page}{1}
+
+%%%%% end titlepage extension code
+
+\subsection{Introdução}\label{introduuxe7uxe3o}
+
+\hfill\break
+A Pesquisa da Pecuária Municipal (PPM) do IBGE tem como objetivo
+fornecer informações estátisticas sobre o efetivo dos rebanhos
+(cabeças), produtos de oriegem animal e produção agrícola. O inquérito é
+anual e atinge todo o território nacional, com informações para o
+Brasil, regiões geográficas, unidades federativas, mesorregiões e
+microrregiões geográficas e municípios (IBGE, 2021).
+
+Neste documento são apresentadas informações extraídas da PPM 2021 para
+os rebanhos de caprinos e ovinos do estado da Paraíba. Para efeito de
+análise comparativa foram considerados os dados de 2010 a 2021, além de
+representação gráfica com dados de 1974 a 2021.
+
+A fonte dos dados é a tabela 3939 do Sistema IBGE de Recuperação
+Automática (SIDRA). Para coleta, tratamento e visualização dos dados
+foram utilizados ferramentas de APIs (\emph{Application Programming
+Interface}) que integram as arquiteturas das linguagens Python e R.\\
+
+\subsection{1. Evolução dos Rebanhos no Brasil, Nordeste e
+Paraíba}\label{evoluuxe7uxe3o-dos-rebanhos-no-brasil-nordeste-e-parauxedba}
+
+\hfill\break
+Considerando o período entre 2010 e 2021, o efetivo de caprinos no
+Brasil passou de 9,31 para 11,9 milhões de cabeças, um aumento de 28\%.
+No mesmo período, o rebanho de ovinos registrou um aumento de 18\%
+passando 17,3 para 30.5 milhões de cabeças. O Nordeste apresentou melhor
+desempenho, com taxas de crescimento de 34\% (caprinos) e 45\% (ovinos).
+No caso da Paraíba, vale destacar o desempenho da ovinocultura com um
+aumento de 71\%, passando de 433 para 744.1 mil cabeças. A
+caprinocultura não apresentou o mesmo dinamismo, a taxa de crescimento
+no período foi de 27\%, um aumento no efetivo de 600.6 para 764.7 mil
+cabeças, um desempenho inferior aos registrado no Brasil e Nordeste
+(Tabela 1).
+
+O Nordeste com 11.3 milhões de cabeças de caprinos, 95,2\% do rebanho
+nacional em 2021 é, seguramente, a região de maior densidade de rebanho
+de caprino do país. Esta alta concentração tem raízes na capacidade de
+adaptação desses animais às condições ambientais do Semiárido
+nordestino. Dos dez maiores Estados produtores de caprinos do Brasil,
+sete estão localizados na região Nordeste (Magalhães et all, 2020).
+
+A caprinocultura paraíbana alcançou, em 2021, um efetivo de 764,7 mil
+cabeças, representando 6,74\% do efetivo nordestino. Em 2010 esses
+números representavam, respectivamente, 600,7 e 7,1\%. Os dados revelam
+que, mesmo com com o aumento do efetivo de 27\%, a Paraíba diminuiu sua
+participação no rebanho de caprino do Nordeste. No que concerne ao
+efetivo de ovinos, a Paraíba, em 2021, contabilizou um total de 744,1
+mil cabeças, 5,18\% do efetivo nordestino. Em 2010 esses números
+representavam, respectivamente, 433 mil e 4,39\%, demonstrando um
+crescimento positivo, inclusive na participação regional.
+
+\newpage
+
+\textsc{\textbf{Tabela 1. Evolução dos rebanhos caprinos e ovinos no
+Brasil, Nordeste e Paraíba}}
+
+\begin{longtable}[]{@{}lccc@{}}
+\toprule\noalign{}
+Categoria & Efetivo 2010 & Efetivo 2021 & Tx\_Variação (\%) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Brasil} & & & \\
+Caprino & 9.312784 & 11.923630 & 28 \\
+Ovino & 17.380581 & 20.537474 & 18 \\
+\textbf{Nordeste} & & & \\
+Caprino & 8.458578 & 11.353363 & 34 \\
+Ovino & 9.857754 & 14.359997 & 45 \\
+\textbf{Paraíba} & & & \\
+Caprino & 600.607 & 764.758 & 27 \\
+Ovino & 433.032 & 744.132 & 71 \\
+\end{longtable}
+
+\hfill\break
+A Figura 1 apresenta a participação dos estados do nordeste no efetivo
+do rebanho caprino da região Nordeste. O estado da Bahia ocupa a
+primeira posição com um efetivo de 3.3 milhões de cabeças, 29,59\%,
+seguido dos estados de Pernambuco, Piauí, Ceará e Paraíba,
+respectivamente, com 3,2 28,22\%, 1,9, 17,14\%, 1,1, 10,2\% e 0,76,
+6,74\% milhões de cabeças. Nas últimas posições se encontram os estados
+do Rio Grande do Nordeste com 0,44, 3,95\%, Maranhão com 0,36, 3,17\%,
+Alagoas com 0,08, 0,72\% e Sergipe com 0,024, 0,21\%.\\
+
+Com relação ao efetivo de ovinos (Figura 2), a Bahia segue na liderança,
+como um rebanho 4,2 milhões de cabeças, 29,58\% do efetivo nordestino.
+Na sequência figuram os estados de Pernambuco com 3,4, 23,92\%, Ceará
+2,5, 17,42\%, Piauí 1,7, 12,1\%, Rio Grande do Norte 0,87, 6,13\% e
+Paraíba, ocupando a sexta posição com um efetivo de 0,74 milhões de
+cabeças, 5,18\% do efetivo nordestino. Os três últimos estados que
+compõe o bloco são Alagoas com 0,33, 2,35\%, Maranhão 0,29, 2,08\% e
+Sergipe 0,17, 1,24\%.
+
+\subsection{4. Nordeste: efetivo de caprinos e ovinos (Série
+Histórica)}\label{nordeste-efetivo-de-caprinos-e-ovinos-suxe9rie-histuxf3rica}
+
+\hfill\break
+A partir da segunda metade da década de 1990, o Nordeste inicia uma
+trajetória com taxas de crescimento ascendentes, principalmente para o
+rebanho de ovino (Figura 3). Essa tendência, como pode ser observado na
+Figura 4, fica mais evidente nos estados de Perrnambuco, Ceará, Paraíba
+e Rio Grande do Norte. De forma geral os rebanhos de caprinos e ovinos
+seguem a mesma tragetôria, o que leva a crer que ambos são afetados
+pelas mesmas variáveis que influenciam no aumento ou diminuição do
+número de animais (Monteiro et all, 2021).
+
+Fatores climáticos e políticas públicas impactam diretamente na evalução
+dos rebanhos. No caso das políticas públicas, por exemplo, o Programa de
+Aquisição de Alimentos (PPA), em sua modalidade PPA-Leite, que
+estabelecia parceria entre o governo federal e os esdados do Semiárido,
+desempenhou papel central na manutenção da taxa de crescimento dos
+rebanhos, impactando diretamente na capacidade de alocação de recursos
+financeiros para a produção do leite caprino, participação e integração
+de novos agentes ao setor produtuvo, dinamização da produção e estímulo
+ao consumo. Essa política, inserida no âmbito do programa institucional
+de combate à probreza e à fome, buscava garantir o fomento à produção e
+ao consumo, e garantia de alimentos para população mais vunerável
+beneficiária de programas como o Fome Zero.
+
+\subsection{5. Paraíba: efetivo de caprinos e ovinos (Série
+Histórica)}\label{parauxedba-efetivo-de-caprinos-e-ovinos-suxe9rie-histuxf3rica}
+
+\hfill\break
+Na Paraíba, considerando a série analisada, Figura 4, verifica-se um
+crescimento do rebanho caprino a partir da segunda metade da década de
+1990, alcançando um efetivo de 657,8 mil cabeças em 2005. Comparando o
+efetivo de 2005 com 2012, constata-se uma redução do efetivo de 28\%,
+184,7 mil cabeças a menos. Já com relação ao efetivo de ovinos, a série
+histórica apresenta estabilidade, com algumas variações sazonais até o
+ano de 2012.
+
+
+
+
+\end{document}

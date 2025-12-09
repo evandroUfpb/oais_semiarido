@@ -1,0 +1,268 @@
+---
+title: "Projeto:<p>Oásis de Cabaceiras"
+subtitle: "Um novo olhar para o Semiárido"
+author:
+  #- name: "Equipe: <p>Carlos Gláucio Sabino de Farias \ \n Coordenador<p>Evandro Farias Rocha \ \n #Coordenador Adjunto<p>"
+  - name: "**Equipe:**<p><p>\n**Carlos Gláucio Sabino de Farias** \ \nCoordenador<p>  **Evandro Farias Rocha** \  \nCoordenador Adjunto"
+format: 
+  titlepage-pdf:
+    classoption: ["oneside", "open=any"]
+    number-sections: false
+    toc: false
+    lof: false
+    lot: false
+    titlepage: "academic"
+    titlepage-logo: "logo_fcf.jpg"
+    titlepage-theme:
+      elements: ["\\headerblock", "\\logoblock", "\\titleblock", "\\authorblock", "\\vfill", "\\dateblock"]
+      page-align: "center"
+      title-style: "doublelinetight"
+      title-fontstyle: ["huge", "bfseries"]
+      title-space-after: "1.5cm"
+      subtitle-fontstyle: "Large"
+      author-block-align: "left"   # Alinhar os autores ao centro
+      author-block-spacing: 0.10cm    # Espaçamento entre os nomes dos autores
+      author-style: "plain"
+      affiliation-style: "none"
+      author-fontstyle: "textsc"
+      affiliation-fontstyle: "large"
+      logo-space-after: "10\\baselineskip"
+      header-fontstyle: ["textsc", "LARGE"]
+      header-space-after: "1.5cm"
+      date-fontstyle: "large"
+      fig.width : 8        # largura do gráfico
+      fig.height : 5        # altura do gráfico
+      out.width: "100%"
+header-includes:
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
+  - \floatplacement{table}{H}
+  - \usepackage{placeins}
+  - \AtBeginDocument{\let\maketitle\relax}
+---
+
+```{r, include=FALSE}
+# Configuração para salvar as imagens
+knitr::opts_chunk$set(dev = "png",
+                        dpi = 350,
+                        echo = TRUE,
+                        cache = TRUE)
+# Configurações dos chunks
+knitr::opts_chunk$set(
+  echo      = FALSE,    # não mostra o código
+  eval      = TRUE,     # executar o código
+  fig.cap   = "",       # título do gráfico
+  results   = "asis",   # formato de renderização de texto
+  fig.width = 8,        # largura do gráfico
+  fig.height = 5,        # altura do gráfico
+  fig.align = "center", # alinhamento horizontal do gráfico
+  out.width = "100%",   # redimensionamento do gráfico (aumentar/diminuir em %)
+  warning   = FALSE,    # exibir avisos do console
+  message   = FALSE,    # exibir mensagens do console
+  size      = "Large"    # tamanho da fonte
+)
+```
+
+## Apresentação
+
+
+O projeto **"OASIS de Cabaceiras"** (Organização de Arranjos Socioeconômicos Sustentáveis) é uma iniciativa estratégica e integrada que visa combater o processo de
+desertificação e promover o desenvolvimento sustentável de Cabaceiras, município localizado na Paraíba. Reconhecendo vulnerabilidades ambientais e socioeconômicas comuns ao bioma da Caatinga, historicamente afetado pela escassez hídrica e degradação do solo, este projeto propõe a
+implementação de um parque agroflorestal para adoção de práticas resilientes para a convivência sustentável com o Semiárido.
+
+
+Em consonância com Programa de Ação Nacional de Combate à Desertificação e Mitigação dos Efeitos da Seca (PAN-Brasil) e inspirado no sucesso de modelos de reflorestamento e educação ambiental aplicados em áreas áridas de Israel, Estados Unidos e México, este projeto visa criar um
+corredor de resiliência ambiental e socioeconômica no Cariri paraibano, replicando e adaptando essas práticas de desenvolvimento sustentável à realidade local.
+
+
+## 1. Justificativa e Objetivos
+
+
+O município de Cabaceiras, localizado no Semiárido paraibano, enfrenta desafios como a baixíssima precipitação pluviométrica – média anual inferior a 500 mm – e a degradação ambiental provocada pela exploração predatória dos recursos naturais. Esses fatores acentuam a vulnerabilidade social e econômica da população. O projeto Oásis propõe a implantação de práticas sustentáveis e inovadoras de manejo do solo, produção agroflorestal e promoção de segurança hídrica e alimentar, visando restaurar áreas degradadas e criar oportunidades para o desenvolvimento local.
+
+
+## 2. Ojetivos
+
+Ao propor atuação em um município que registra significativo grau de desertificação, o projeto Oásis de Cabaceiras está contribuindo com iniciativas que potencializam a oportunidade de resultados e o fortalecimento da capacidade de adaptação, resiliência e superação das comunidades do Semiárido Paraibano. Neste contexto, são delineados os seguintes objetivos:
+
+
+### 2.1 Objetivo Geral
+
+Este projeto visa criar um modelo de intervenção integrada, com foco na Educação Ambiental, na formação e capacitação em desenvolvimento sustentável, na recuperação de áreas degradadas, na promoção da segurança hídrica e alimentar, na diversificação econômica local e na valorização do patrimônio natural e cultural do município de Cabaceiras.
+
+
+Para alcançar o objetivo proposto e abordar os desafios identificados, o projeto OASIS se estrutura em um conjunto de objetivos claros e específicos:
+
+
+### 2.1 Objetivo Específicos
+
+* Recuperar a vegetação nativa da Caatinga por meio de reflorestamento, manejo sustentável e técnicas de silagem, promovendo a convivência harmoniosa entre o ser
+humano e o bioma Caatinga.
+
+* Implementar infraestrutura e soluções hídricas inovadoras com a construção de espaço socioambiental e rede de sementes, poço artesiano, sistemas de dessalinização, barragens subterrâneas e cisternas, para garantir a adaptabilidade e o manejo sustentável das atividades
+produtivas na Caatinga.
+
+* Promover a educação ambiental e capacitar jovens e pequenos produtores em práticas agroecológicas sustentáveis, novas técnicas agropecuárias e manejo de recursos vegetais da Caatinga.
+
+* Fomentar o turismo ecológico e cultural valorizando os atrativos naturais como o Lajedo de Pai Mateus, gerando novas oportunidades de emprego e renda.
+
+* Desenvolver o potencial econômico local através da agricultura, caprinovinocultura e, especialmente, da comercialização e beneficiamento das variedades de espécies vegetais nativas existentes na região.
+
+## 3. Metodologia
+
+O projeto, coordenado centralmente pelo Fórum Celso Furtado de Desenvolvimento da Paraíba, abrange uma área de 20 hectares. Sendo 2 hectares reservados para a infraestrutura composta por um espaço socioambiental, um galpão de mudas e um jardim agroecológico, e os 18 hectares restantes destinados ao reflorestamento. A metodologia incluirá as seguintes etapas:
+
+1. Realização de Diagnóstico Detalhado da área a ser recuperada. Isso inclui analisar o potencial de regeneração natural, os fatores de degradação, as características do solo e dos recursos hídricos. Também serão identificadas as espécies nativas da região e o potencial
+turístico do município.
+
+2. Planejamento e Design de Parque Agroflorestal, com definição de 2 hectares destinadas a bosque de mata nativa, elaboração de estratégia para aquisição, produção de mudas, e seleção de espaços para trilhas ecológicas e educação ambiental.
+
+3. Implementação de Infraestruturas, incluindo a construção de uma unidade com espaços para atividades socioambientais, um banco de sementes e um galpão para produção e armazenamento de mudas de árvores nativas e frutíferas. Além disso, o projeto incluí a
+perfuração de um poço artesiano, com instalação de sistemas de dessalinização por osmose reversa.
+
+4. Ações de Reflorestamento e Manejo Sustentável, com foco no plantio de mudas nativas. Para isso, serão utilizadas técnicas como o adensamento, enriquecimento e nucleação do solo, além de medidas para mitigar a erosão, como o terraceamento e a criação de rampas de
+contenção.
+
+5. Programas de Capacitação e Educação Ambiental para formar vinte Agentes de Desenvolvimento Sustentável (ADS). Serão realizadas oficinas e cursos para capacitar jovens e pequenos produtores em práticas agroecológicas, uso de recursos vegetais nativos e técnicas de manejo hídrico.
+
+6. Desenvolvimento de Infraestrutura Turística com foco na criação e sinalização de trilhas ecológicas, áreas de lazer e pontos de interesse histórico-cultural. O projeto também incluí a pesquisa e valorização das manifestações culturais e aprimoramento da gastronomia local,
+visando potencializar o turismo.
+
+7. Monitoramento e Avaliação, com o acompanhamento contínuo dos indicadores ambientais, sociais e econômicos para garantir que o projeto seja sustentável e possa ser replicado em outras regiões.
+
+
+## 4. Metas
+
+**Meta 1 - Recuperação de áreas degradadas**
+
+* Recuperar, no mínimo, vinte hectares de áreas degradadas por meio do plantio de mudas nativas e implementação de técnicas de manejo de solo.
+
+**Meta 2 - Implantação de Infraestrutura**
+
+* Construir, no período de seis meses, uma unidade de apoio que servirá como centro de produção, reprodução e armazenamento de mudas;
+
+* Perfurar, em seis meses, no mínimo um poço artesiano e instalar o sistema de dessalinização para garantir o fornecimento de água para o projeto e as
+comunidades.
+
+**Meta 3 - Capacitação e Educação Ambiental**
+
+* Capacitar, no primeiro ano do projeto, vinte Agentes de Desenvolvimento Sustentável em práticas agroecológicas, manejo de solo e técnicas de gestão
+hídricas, visando a replicação do conhecimento nas comunidades.
+
+**Meta 4 - Desenvolvimento de Infraestrutura Turística**
+
+* Criar e sinalizar trilhas ecológicas e pontos de interesse cultural para o desenvolvimento do ecoturismo;
+
+* Apoiar empreendimentos locais (micro e pequenos produtores) na formalização e na comercialização de produtos da sociobiodiversidade, 
+fortalecendo a economia regional.
+
+
+### 5. Atividades Vinculadas às Metas
+
+Para cada meta serão vinculadas atividades que visam atingir os objetivos propostos.
+
+
+#### Meta 1: Recuperação de Áreas Degradadas
+
+-**Atividade 1.1 – Licenciamento e Equipe Técnica:** Obter o licenciamento ambiental e formalizar convênios com entidades parceiras. Em seguida, contratar a equipe técnica e de operação (engenheiro civil e mestre de obras).
+
+
+- **Atividade 1.2 – Preparo e Produção:** Mapear e preparar as áreas destinadas ao reflorestamento e infraestrutura (20 ha no total), utilizando técnicas de combate à erosão e recuperação de solo. Nos viveiros, produzir mudas de espécies nativas da Caatinga para o plantio.
+
+
+- **Atividade 1.3 – Reflorestamento e Manejo:** Realizar o plantio das mudas e manejo inicial das áreas reflorestadas.
+
+
+- **Atividade 1.4 – Monitoramento Contínuo:** Implementar um plano de monitoramento e manutenção contínua para as áreas restauradas.
+
+
+#### Meta 2 - Implementação de Infraestrutura
+
+
+- **Atividade 2.1 – Construção de Unidade de Apoio:** Construir uma unidade de apoio, com áreas reservadas para atividades socioambientais, banco de sementes e galpão para abrigar mudas.
+
+
+- **Atividade 2.2 – Infraestrutura Hídrica:** Perfurar um poço artesiano e instalar sistema de dessalinização, além de sistema elétrico e de irrigação para toda a infraestrutura do projeto.
+
+
+#### Meta 3 - Capacitação e Educação 
+
+
+- **Atividade 3.1 – Preparação de Conteúdo:** Elaborar material para cursos, oficinas e treinamento.
+
+- **Atividade 3.2 – Formação e Capacitação:** Oferecer cursos e oficinas sobreagroecologia, bioeconomia e manejo sustentável para pequenos produtores e a comunidade. O foco será a formação de vinte Agentes de Desenvolvimento Sustentável para atuarem como multiplicadores do conhecimento.
+
+- **Atividade 3.3 – Programa Educacional:** Implementar um programa de educação ambiental em escolas e comunidades locais.
+
+- **Atividade 3.4 – Sustentabilidade Financeira/Operacional Pós-Projeto:** Garantir a longevidade do projeto por meio de captação de recursos provenientes da
+comercialização de produtos da sociobiodiversidade da Caatinga (bioeconomia), de atividades de ecoturismo que valorizarão o patrimônio natural da região e de convênios com entidades que apoiam atividades sustentáveis em áreas de risco ambiental.
+
+
+#### Meta 4 - Desenvolvimento Econômico e Turístico
+
+- **Atividade 4.1 – Mapeamento e Estrutura:** Mapear roteiros e atrativos turísticos e culturais. Em seguida, estruturar e sinalizar as trilhas ecológicas e os pontos de visitação.
+
+- **Atividade 4.2 – Divulgação e Apoio:** Elaborar um plano de divulgação e marketing para o turismo local e desenvolver um programa de apoio às cadeias produtivas da sociobiodiversidade.
+
+## 5. Quadro Resumo, Metas e Atividades
+
+| Metas | Atividades | Descrição | Prazo (mestes) |
+|:-------:|:------------:|:-----------:|:----------------:|
+|1|1.1|Licenciamento e equipe técnica|1-3|
+|1|1.2|Produção de mudas|3-12|
+|1|1.3|Reflorestamento e Manejo|6-12|
+|1|1.4|Monitoramento Contínuo|1-24|
+|2|2.1|Construção de Unidade de Apoio|1-6|
+|2|2.2|Infraestrutura Hídrica|6-12|
+|3|3.1|Preparação de Conteúdo|6-12|
+|3|3.2|Formação e Capacitação|6-12|
+|3|3.3|Programa Educacional|6-12|
+|4|4.1|Mapeamento e Estrutura|6-12|
+|4|4.2|Divulgação e Apoio|6-12|
+
+## 6. Parcerias
+
+O sucesso do projeto dependerá de ampla articulação e colaboração entre diversos parceiros.
+As parcerias estratégicas incluem:
+
+* Governamentais: Prefeituras Municipais de Cabaceiras, São João do Cariri e Serra Branca;
+Departamento Nacional de Obras Contra as Secas (DNOCS); Governo do Estado da Paraíba; Ministério do Meio Ambiente; Instituto Nacional do Semiárido (INSA); Secretaria do Meio Ambiente e Sustentabilidade do Estado da Paraíba (SEMAS-PB); Companhia de Desenvolvimento do Vale do São Francisco (CODEVASF).
+
+* Órgãos de Financiamento: Banco do Nordeste do Brasil (BNB).
+
+* Pesquisa e Desenvolvimento: Embrapa; Universidade Federal da Paraíba (UFPB) e outras
+universidades.
+
+* Sociedade Civil: Fórum Celso Furtado de Desenvolvimento da Paraíba; ONGs e
+associações locais.
+
+## 7. Coordenação e Equipe Técnica
+
+A coordenação geral do projeto Oásis de Cabaceiras será realizada pelo **Fórum Celso Furtado de Desenvolvimento da Paraíba**. O Fórum é uma associação civil, sem fins lucrativos, que se dedica à promoção do desenvolvimento sustentável e da inclusão social na Paraíba e no Nordeste. Fundado por um grupo de pesquisadores, profissionais liberais e ativistas sociais, o Fórum atua na formulação e divulgação de ideias e propostas que buscam superar os desafios econômicos, sociais e ambientais da região. Com um forte compromisso com a visão do economista Celso Furtado, a entidade se destaca pela sua capacidade de articular parcerias entre o setor público, privado, universidades e sociedade civil organizada, buscando soluções inovadoras e sustentáveis para o semiárido. A experiência do Fórum em coordenação de projetos, análise socioeconômica e articulação institucional o credencia como o parceiro ideal para a gestão e implementação deste projeto de grande envergadura.
+
+
+O quadro societário do Fórum Celso Furtado de Desenvolvimento da Paraíba (FCF), entidade proponente, é composto por 40 associados com atuação nas áreas de planejamento estratégico, economia do desenvolvimento, recursos hídricos, administração, planejamento e gestão. Essa diversidade técnica e institucional fortalece a capacidade do FCF para coordenar e executar projetos de grande escala voltados ao desenvolvimento sustentável. A equipe técnica do projeto é formada por um coordenador e coordenador adjunto vinculados ao FCF, e um engenheiro civil.
+
+\newpage
+
+## 8. Orçamento Consolidado do Projeto
+
+O orçamento para o projeto Oásis de Cabaceiras está estimado em R$ 474.158,15. O quadro abaixo apresenta a distribuição dos principais itens da previsão orçamentária.
+
+
+| Item | Valor |
+|:----|:-----:|
+| Construção da unidade sede | R$ 341.040,83 |
+| Construção de galpão pré-moldado | R$ 71.365,50 |
+| Perfuração de poço e aquição de bomba submersa | R$ 49.517,42 |
+| Administração e equipe técnica | R$ 24.158,15 |
+| Total | R$ 474.158,15 |
+
+
+
+## 9. Conclusão
+
+Com a implementação de projetos como este Oásis, podemos transformar a realidade das regiões afetadas pela desertificação e, ao mesmo tempo, oferecer um futuro de dignidade e prosperidade para os moradores do semiárido.
+
+
+O projeto “Oásis de Cabaceiras” é apenas o começo de um movimento transformador no semiárido, que visa não só restaurar a natureza, mas também melhorar a qualidade de vida de toda a população da região.
